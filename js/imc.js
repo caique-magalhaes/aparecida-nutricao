@@ -10,12 +10,12 @@ listaPaciente.forEach((element)=>{
 
     let tdImc = element.querySelector('.paciente_info--imc')
     
-    tdImc.textContent = imc(peso,altura).toFixed(2);
+    tdImc.textContent = imc(peso,altura);
 
 })
 
 
 function imc(peso,altura){
     const imc = peso/(altura*altura)
-    return imc
+    return imc.toFixed(2)
 }
