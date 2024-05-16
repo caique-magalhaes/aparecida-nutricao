@@ -61,3 +61,6 @@ label{
 .campo__outros{
     padding-right: 1em;
 }
+.pacientes--naoprocurados{
+    display: none;
+}
