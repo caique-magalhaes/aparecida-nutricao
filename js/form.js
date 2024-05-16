@@ -1,4 +1,4 @@
-'strict mode'
+"use strict"
 var botaoAdd = document.querySelector('#form__adicionar__botao')
 
 botaoAdd.addEventListener("click",function(event){
