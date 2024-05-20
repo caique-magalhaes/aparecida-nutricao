@@ -7,9 +7,12 @@ campoFiltro.addEventListener('input',function(){
     if(this.value.length > 0){
        paciente.forEach((element) => {
            const tdNome = element.querySelector('.paciente_info--nome');
-           const nome = tdNome.textContent 
+           const nome = tdNome.textContent;
 
-           if(this.value === nome){
+           const expressao = new RegExp(this.value,'i')
+           
+
+           if(expressao.test(nome)){
                 element.classList.remove('pacientes--naoprocurados')
            }else{
                 element.classList.add('pacientes--naoprocurados')
