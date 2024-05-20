@@ -61,6 +61,20 @@ label{
 .campo__outros{
     padding-right: 1em;
 }
+.container__main_botao{
+    width: 200px;
+    height: 55px;
+    margin: 1em 0 1em 0;
+    cursor: pointer;
+    transition: width  1.5s;
+}
+.container__main_botao:hover{
+    width: 250px;
+}
 .pacientes--naoprocurados{
     display: none;
+}
+.soft-remove{
+    opacity: 0;
+    transition: 0.5s;
 }
